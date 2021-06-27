@@ -3,8 +3,8 @@ package com.example.employeepayroll.DTO;
 
 public class EmployeePayrollDTO {
 	public String name;
-	public String salary;
-	public EmployeePayrollDTO(String name, String salary) {
+	public long salary;
+	public EmployeePayrollDTO(String name, long salary) {
 		super();
 		this.name = name;
 		this.salary = salary;
