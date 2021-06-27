@@ -1,6 +1,8 @@
 package com.example.employeepayroll.DTO;
 
+import lombok.Data;
 
+@Data
 public class EmployeePayrollDTO {
 	public String name;
 	public long salary;
