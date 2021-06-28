@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.example.employeepayroll.DTO.EmployeePayrollDTO;
+import com.example.employeepayroll.exception.EmployeePayrollException;
 import com.example.employeepayroll.model.EmployeePayrollData;
 
 
@@ -21,7 +22,10 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
 	@Override
 	public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-		return employeePayrollDataList.get(empId-1);
+		return employeePayrollDataList.stream()
+				   .filter(addressData -> addressData.getEmpId() == empId)
+				   .findFirst()
+				   .orElseThrow(() -> new EmployeePayrollException("Employee not found"));
 	}
 
 	@Override
@@ -42,7 +46,12 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
 	@Override
 	public void deleteEmployeePayrollData(int empId) {
-		employeePayrollDataList.remove(empId-1);
+		EmployeePayrollData employeePayrollData = employeePayrollDataList.stream()
+				.filter(empData -> empData.getEmpId() == empId)
+				.findFirst()
+				.orElseThrow(() -> new EmployeePayrollException("Delete cannot be successfull !! InvalidId"));	
+	int delete = employeePayrollDataList.indexOf(employeePayrollData);
+	employeePayrollDataList.remove(delete);
 		
 	}
 
