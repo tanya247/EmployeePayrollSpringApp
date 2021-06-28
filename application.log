@@ -480,3 +480,4 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2021-06-28 13:35:10.361  WARN 26124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-06-28 13:35:11.308  WARN 26124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
 2021-06-28 13:35:11.510  INFO 26124 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 6.363 seconds (JVM running for 7.443)
+2021-06-28 13:35:11.518  INFO 26124 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Employee Payroll app started in DEV environment
