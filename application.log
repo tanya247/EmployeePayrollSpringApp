@@ -39,3 +39,9 @@
 2021-06-29 11:50:06.247  WARN 21992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-06-29 11:50:06.337  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 0.477 seconds (JVM running for 457.307)
 2021-06-29 11:50:06.341  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Employee Payroll app started in DEV environment
+2021-06-29 11:50:19.205  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 15.0.2 on LAPTOP-Q9T3UUC8 with PID 21992 (C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\employeePayroll\bin\main started by tanya in C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\employeePayroll)
+2021-06-29 11:50:19.206 DEBUG 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-29 11:50:19.206  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : The following profiles are active: dev
+2021-06-29 11:50:19.666  WARN 21992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 11:50:19.741  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 0.564 seconds (JVM running for 470.711)
+2021-06-29 11:50:19.743  INFO 21992 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Employee Payroll app started in DEV environment
