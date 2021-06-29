@@ -13,7 +13,7 @@ public class EmployeePayrollData {
 	private String name;
 	private long salary;
 	private String gender;
-	private String startDate;
+	private LocalDate startDate;
 	private String Note;
 	private String ProfilePic;
 	private List<String> department;
